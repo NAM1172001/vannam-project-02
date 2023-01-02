@@ -1,17 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F8 Project 02</title>
-    <!-- Reset CSS  -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F8 Project 02</title>
+        <!-- Reset CSS  -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
 
-    <!-- Styles  -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <h1>xin chào</h1>
-</body>
+        <!-- Embed Fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles  -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            href="./assets/css/fontawesome-free-6.2.1-web/css/all.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <!-- header  -->
+            <header class="header fixed">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- logo  -->
+                        <img
+                            src="./assets/img/Lesson..svg"
+                            alt="Lesson."
+                            class="logo"
+                        />
+
+                        <nav class="nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#!">Trang Chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Khóa Học</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Định Giá</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Đánh Giá</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Action  -->
+                        <div class="action">
+                            <a href="#!" class="btn sign-up-btn">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero  -->
+            <div class="hero">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- Hero left  -->
+                        <div class="media-block">
+                            <img
+                                src="./assets/img/hero-img.jpg"
+                                alt="Learn without limits and spread knowledge."
+                                class="img"
+                            />
+
+                            <div class="hero-summary">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/icon/list.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">20 Khóa học</p>
+                                        <p class="title">Thiết Kế UI/UX</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/icon/code.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">20 Khóa Học</p>
+                                        <p class="title">ReactJS Pro</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/icon/speaker.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <p class="label">30 Khóa học</p>
+                                        <p class="title">Marketing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hero right  -->
+                        <div class="content-block">
+                            <h1 class="heading lv1">
+                                Học không giới hạn và lan tỏa kiến ​​thức.
+                            </h1>
+                            <p class="desc">
+                                Xây dựng các kỹ năng mới cho cảm giác “đây là
+                                năm của tôi” với các khóa học, chứng chỉ và bằng
+                                cấp từ các trường đại học và công ty đẳng cấp
+                                thế giới.
+                            </p>
+                            <div class="cta-group">
+                                <a href="" class="btn hero-cta">Xem Khóa Học</a>
+                                <button class="watch-video">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/icon/play.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span>Xem Video</span>
+                                </button>
+                            </div>
+                            <p class="desc">Tương tác gần đây</p>
+                            <p class="desc stats">
+                                <strong>50K</strong> Sinh Viên
+                                <strong>70+</strong> Khóa Học
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular  -->
+            <div class="popular">
+                <div class="main-content">
+                    <div class="popular-top">
+                        <div class="info">
+                            <h2 class="heading lv2">
+                                Các khóa học phổ biến của chúng tôi
+                            </h2>
+                            <p class="desc">
+                                Xây dựng các kỹ năng mới với các khóa học hợp
+                                thời thượng mới và tỏa sáng cho sự nghiệp tương
+                                lai tiếp theo.
+                            </p>
+                        </div>
+                        <div class="controls">
+                            <button class="control-btn">
+                                <svg
+                                    width="8"
+                                    height="14"
+                                    viewBox="0 0 8 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M7 1L1 7L7 13"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <button class="control-btn">
+                                <svg
+                                    width="8"
+                                    height="14"
+                                    viewBox="0 0 8 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 1L7 7L1 13"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="course-list">
+                        <!-- Course-item 1 -->
+                        <div class="course-item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/courses-1.jpg"
+                                    alt="Basic web design"
+                                    class="thumb"
+                                />
+                            </a>
+                            <div class="info">
+                                <div class="head">
+                                    <h3 class="title">
+                                        <a
+                                            href="#!"
+                                            class="line-clamp break-all"
+                                        >
+                                            Thiết kế web cơ bản
+                                        </a>
+                                    </h3>
+                                    <div class="rating">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt=""
+                                            class="star"
+                                        />
+                                        <span class="value">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp line-2 break-all">
+                                    Nhận khóa học tốt nhất, tích lũy kiến ​​thức
+                                    và tỏa sáng cho sự nghiệp tương lai của bạn.
+                                </p>
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn book-btn">
+                                        Đặt Ngay
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course-item 2 -->
+                        <div class="course-item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/courses-2.jpg"
+                                    alt="UI/UX design"
+                                    class="thumb"
+                            /></a>
+                            <div class="info">
+                                <div class="head">
+                                    <h3 class="title">
+                                        <a
+                                            href="#!"
+                                            class="line-clamp break-all"
+                                        >
+                                            Thiết kế UI/UX
+                                        </a>
+                                    </h3>
+                                    <div class="rating">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt=""
+                                            class="star"
+                                        />
+                                        <span class="value">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp line-2 break-all">
+                                    Nhận khóa học tốt nhất, tích lũy kiến ​​thức
+                                    và tỏa sáng cho sự nghiệp tương lai của bạn.
+                                </p>
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn book-btn">
+                                        Đặt Ngay
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course-item 3 -->
+                        <div class="course-item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/courses-3.jpg"
+                                    alt="Web App design"
+                                    class="thumb"
+                            /></a>
+                            <div class="info">
+                                <div class="head">
+                                    <h3 class="title">
+                                        <a
+                                            href="#!"
+                                            class="line-clamp break-all"
+                                        >
+                                            Thiết kế ứng dụng web
+                                        </a>
+                                    </h3>
+                                    <div class="rating">
+                                        <img
+                                            src="./assets/icon/star.svg"
+                                            alt=""
+                                            class="star"
+                                        />
+                                        <span class="value">4.5</span>
+                                    </div>
+                                </div>
+                                <p class="desc line-clamp line-2 break-all">
+                                    Nhận khóa học tốt nhất, tích lũy kiến ​​thức
+                                    và tỏa sáng cho sự nghiệp tương lai của bạn.
+                                </p>
+                                <div class="foot">
+                                    <span class="price">$120.75</span>
+                                    <button class="btn book-btn">
+                                        Đặt Ngay
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feeback  -->
+            <div class="feedback">
+                <div class="main-content">
+                    <div class="feeback-list">
+                        <!-- Feedback item 1  -->
+                        <div class="feedback-item">
+                            <div class="info">
+                                <img
+                                    src="./assets/img/feedback-avatar-1.jpg"
+                                    alt="Peter Moor"
+                                    class="avatar"
+                                />
+                                <p class="title">Peter Moor</p>
+                                <p class="desc">Sinh viên thiết kế web</p>
+                                <div class="dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img
+                                    src="./assets/icon/open-quotes.svg"
+                                    alt=""
+                                    class="open-quotes"
+                                />
+                                <blockquote>
+                                    Sơ yếu lý lịch của tôi không chỉ trông ấn
+                                    tượng—đầy đủ tên và biểu tượng của các tổ
+                                    chức đẳng cấp thế giới—mà những chứng chỉ
+                                    này còn đưa tôi đến gần hơn với mục tiêu
+                                    nghề nghiệp của mình bằng cách xác thực các
+                                    kỹ năng tôi đã học được.
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Feedback item 2  -->
+                        <!-- <div class="feedback-item">
+                            <div class="info">
+                                <img src="./assets/img/feedback-avatar-2.jpg" alt="Peter Moor" class="avatar">
+                                <p class="title">Sơn Đặng</p>
+                                <p class="desc">CEO F8</p>
+                                <div class="dots">
+                                    <span class="dot"></span>
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./assets/icon/open-quotes.svg" alt="" class="open-quotes">
+                                <blockquote>Sao nó lại méo thế nhỉ, nhìn cảm giác nó hơi méo méo các bạn ạ, các bạn có thấy nó méo không? Ok có thể là do chúng ta hơi ảo giác một chút thôi, nó tròn đấy các bạn ạ, nhá!" </blockquote>
+                            </div>
+                        </div> -->
+
+                        <!-- Feedback item 3  -->
+                        <!-- <div class="feedback-item">
+                            <div class="info">
+                                <img src="./assets/img/feedback-avatar-3.jpg" alt="Peter Moor" class="avatar">
+                                <p class="title">Sơn Đặng</p>
+                                <p class="desc">CEO F8</p>
+                                <div class="dots">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot active"></span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="./assets/icon/open-quotes.svg" alt="" class="open-quotes">
+                                <blockquote>Sao nó lại méo thế nhỉ, nhìn cảm giác nó hơi méo méo các bạn ạ, các bạn có thấy nó méo không? Ok có thể là do chúng ta hơi ảo giác một chút thôi, nó tròn đấy các bạn ạ, nhá!" </blockquote>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features 1  -->
+            <div class="features">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="images">
+                            <img
+                                class="lower"
+                                src="./assets/img/feature-1.jpg"
+                                alt=" Kết quả của người học thông qua nền tảng tuyệt
+                            vời của chúng tôi"
+                            />
+                            <img
+                                src="./assets/img/feature-2.jpg"
+                                alt=" Kết quả của người học thông qua nền tảng tuyệt
+                            vời của chúng tôi"
+                            />
+                        </div>
+                        <div class="content">
+                            <h2 class="heading lv2">
+                                Kết quả của người học thông qua nền tảng tuyệt
+                                vời của chúng tôi
+                            </h2>
+                            <p class="desc">
+                                87% những người học để phát triển nghề nghiệp
+                                báo cáo các lợi ích nghề nghiệp như được thăng
+                                chức, tăng lương hoặc bắt đầu một sự nghiệp mới.
+                            </p>
+                            <p class="desc">Tác động bài học</p>
+                            <a href="#!" class="btn cta-btn">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features 2  -->
+            <div class="features features-2nd">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="images">
+                            <img
+                                src="./assets/img/feature-3.jpg"
+                                alt="Thực hiện bước tiếp theo hướng tới các mục tiêu cá nhân và nghề nghiệp của bạn với Bài học."
+                            />
+                        </div>
+                        <div class="content">
+                            <h2 class="heading lv2">
+                                Thực hiện bước tiếp theo hướng tới các mục tiêu
+                                cá nhân và nghề nghiệp của bạn với bài học.
+                            </h2>
+                            <p class="desc">
+                                Thực hiện bước tiếp theo hướng tới. Tham gia
+                                ngay bây giờ để nhận các đề xuất được cá nhân
+                                hóa và nhiều hơn nữa từ danh mục Coursera đầy
+                                đủ.
+                            </p>
+                            <a href="#!" class="btn cta-btn">Tham gia ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog  -->
+            <div class="blog">
+                <div class="main-content">
+                    <div class="blog-top">
+                        <h2 class="heading lv2">Blog của chúng tôi</h2>
+                        <p class="desc">
+                            Đọc blog du lịch thường xuyên của chúng tôi và biết thông tin cập nhật mới nhất về chuyến tham quan và du lịch
+                        </p>
+                    </div>
+                    <div class="blog-list">
+                        <!-- Blog item 1  -->
+                        <div class="item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/blog-1.jpg"
+                                    alt="How to become a pro web designer in 2022 and get remot job?"
+                                    class="thumb"
+                                />
+                            </a>
+                            <div class="info">
+                                <span class="date">21 November 2021</span>
+                                <h3 class="title">
+                                    <a href="#!"
+                                        >Làm thế nào để trở thành nhà thiết kế web chuyên nghiệp vào năm 2023 và nhận công việc từ xa?</a
+                                    >
+                                </h3>
+                                <a href="#!" class="btn">Đọc Thêm</a>
+                            </div>
+                        </div>
+
+                        <!-- Blog item 2  -->
+                        <div class="item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/blog-2.jpg"
+                                    alt="How to become a pro web designer in 2022 and get remot job?"
+                                    class="thumb"
+                                />
+                            </a>
+                            <div class="info">
+                                <span class="date">21 November 2021</span>
+                                <h3 class="title">
+                                    <a href="#!"
+                                        >Làm thế nào để trở thành nhà thiết kế web chuyên nghiệp vào năm 2023 và nhận công việc từ xa?</a
+                                    >
+                                </h3>
+                                <a href="#!" class="btn">Đọc Thêm</a>
+                            </div>
+                        </div>
+
+                        <!-- Blog item 3  -->
+                        <div class="item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/blog-3.jpg"
+                                    alt="How to become a pro web designer in 2022 and get remot job?"
+                                    class="thumb"
+                                />
+                            </a>
+                            <div class="info">
+                                <span class="date">21 November 2021</span>
+                                <h3 class="title">
+                                    <a href="#!"
+                                        >Làm thế nào để trở thành nhà thiết kế web chuyên nghiệp vào năm 2023 và nhận công việc từ xa?
+                                    </a>
+                                </h3>
+                                <a href="#!" class="btn">Đọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer  -->
+            <footer class="footer">
+                <div class="main-content">
+                    <div class="row">
+                        <!-- Column 1  -->
+                        <div class="column">
+                           <img src="./assets/img/logo-white.svg" alt="Lesson." class="logo">
+                           <p class="desc">Cần giúp đỡ cho sự nghiệp mơ ước của bạn? tin tưởng chúng tôi. Với Lesson, việc học trở nên dễ dàng hơn rất nhiều với chúng tôi.</p>
+                           <div class="socials">
+                            <a href="#!">
+                                <img src="./assets/icon/twitter.svg" alt="Twitter" class="icon">
+                            </a>
+                            <a href="#!">
+                                <img src="./assets/icon/facebook.svg" alt="Facebook" class="icon">
+                            </a>
+                            <a href="#!">
+                                <img src="./assets/icon/linkedin.svg" alt="Linkedin" class="icon">
+                            </a>
+                            <a href="#!">
+                                <img src="./assets/icon/instagram.svg" alt="Instagram" class="icon">
+                            </a>
+                           </div>
+                        </div>
+
+                        <!-- Column 2  -->
+                        <div class="column">
+                            <h3 class="title">Công ty</h3>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Đặc trưng</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Giá của chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Tin mới nhất</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3  -->
+                        <div class="column">
+                            <h3 class="title">Hỗ trợ</h3>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!">Câu hỏi thường gặp</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Điều khoản và điều kiện</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Chính sách bảo mật</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Liên hệ chúng tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4  -->
+                        <div class="column">
+                            <h3 class="title">Địa điểm</h3>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!">
+                                        <strong>Địa chỉ:</strong> 27 Division St, New York, NY 10002, USA
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                       <strong> Email:</strong> email@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <strong>Điện thoại:</strong> + 000 1234 567 890
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright ©2023 by Nguyễn Văn Nam All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>
